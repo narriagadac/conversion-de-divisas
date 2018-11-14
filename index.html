@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<meta charset="UTF-8">
+	<title>Conversor de divisas</title>
+</head>
+<body>
+	<div id="general">
+
+		<div id="contenido">
+		<h1>Conversor de divisas </h1>
+			<h3>Elija una opción</h3>
+			<div id="errorConversion"></div>
+
+			
+			<select class="form-control" id="tipoCambio"> 
+				 <option value="1"> Euro</option>
+				 <option value="2"> Dolar</option>
+			</select>
+			<br>
+			<input class="form-control" type="text" id="valor" onKeyPress="return soloNumeros(event)"><br><br>
+			A PESO CHILENO  :<br>	
+			<input class="form-control" type="text" id="total" readonly><br><br>
+
+			<input type="button" class="btn btn-primary" value="convertir" onclick="convertir()">
+			<input type="button" class="btn btn-primary1" value="limpiar" onclick="limpiar()">
+			<br><br>
+
+				
+		
+	
+
+		
+</body>
+</html>
